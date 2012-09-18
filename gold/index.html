@@ -1,0 +1,344 @@
+<!--
+Howard Livingston
+MiU-Robin Alarcon
+Week two Gold App Assignment
+8/2012
+-->
+
+
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<meta name="mobile viewport optimized: j.mp/bplateviewport"/> 
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1">
+	<link media="only screen and (max-device-width: 480px) and (min-device-width: 320px)" href="mobile.css" type="text/css" rel="stylesheet" />
+	<link media="handheld, only screen and (max-device-width: 319px)" href="mobile_simple.css" type="text/css" rel="stylesheet" />
+	<meta http-equiv="cleartype" content="on">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" /> 
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	
+
+</head>
+<body > 
+
+<!--Home Page-->
+	
+	<div data-role="page" id="home">
+		
+	<header data-role="header" data-position="fixed" id="indexBackground">
+          		<div data-role="header" data-position="fixed" data-theme="a">
+					<h1>Wolflinx Home</h1>
+				</div>
+          		<div id="indexIcon" class="indexIcon" style="text-align:center">
+          	 		<a> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>
+<!--CTA-->         		
+    			<div id="cta" style="background-color:#F6F3D2;border:5px solid orange;border-style: groove;text-align:center; height:130px;">
+			    	<div>
+			    	<p id="topCtaTitle" class="topCtaTitle">Welcome to Wolflinx</p>
+			    	<p id="openingStatement"data-rel="dialog">Organize and store everything you do on-line in one place.</p><br>
+					
+		    	</div>				
+<!--Navbar-->	<div data-role="navbar" >
+						<ul>
+							<li><a data-ajax="false" href="additem.html" id="additem.html"  data-role="button"  data-icon="home" data-theme="a">Sign-in</a></li>
+							<li><a data-ajax="false" href="bronze/index.html" id="bronze/index.html" data-role="button" data-icon="info" data-theme="a">BronzApp</a></li>
+							<li><a data-ajax="false" href="gitHub" id="gitHub" data-icon="gear" data-theme="a">Git Links</a></li>
+						</ul>			
+		        </div>
+
+	</header>
+
+<!--Home page Buttons-->
+		<div>
+				 <a data-ajax="false" href="additem.html" id="additem.html" data-role="button" data-mini="true" data-theme="d">Start Linking Now!</a>
+		</div>
+		<div data-role="content">	
+			<p id="search">Search</p>
+			<div data-role="fieldcontain">
+				<ul data-role="listview" data-filter="true" data-theme="b">
+					<li>
+						<a href="#fun" data-ajax="false">
+						<img src="images/funFace.png"/>
+							<h3>Fun</h3>
+							<p>Research, School-info, Contacts and Correspondance</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<ul data-role="listview" data-mini="true" data-theme="c">
+				<li
+					<a href="#ed" data-ajax="false">
+					<img src="images/edIcon.png"/>
+						<h3>Education</h3>
+						<p>Games, Digital Media, Social Networks</p>
+					</a>
+				</li>
+			</ul>
+			<ul data-role="listview" data-mini="true" data-theme="d">
+				<li
+					<a href="#work" data-ajax="false">
+					<img src="images/workIcon.png"/>
+						<h3>Work</h3>
+						<p>Research, Current Projects, Contacts</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+<!--Footer-->		
+		
+		<div data-role="footer" data-position="fixed" data-theme="a" >
+			<a data-ajax="false" href="index.html" id="aboutWolflink" data-role="button"  data-theme="d">About Wolflinx</a>
+			<a data-ajax="false" href="additem.html" id="additem.html" "data-role="button" data-inline="true" data-theme="d">Contact Us</a>
+			<h4>Wolflinx Home</h4>
+		</div>
+	</div>
+	
+
+
+
+
+<!--FUN PAGE-->
+	
+	<div data-role="page" id="fun" data-add-back-btn="true">
+
+
+		<header data-role="header" data-position="fixed" data-theme="b">
+          		<div data-role="header" data-position="fixed" data-theme="b" >
+					<h1>Fun</h1>
+				</div>
+          		<!--<div id="indexIcon" style="text-align:center;" >
+          	 		<a data-ajax="false"> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>-->
+
+<!--Navbar-->	<div data-role="navbar">
+						<div>
+							<ul>
+								<li><a data-ajax="false href="#additem.html" id="additem.html" data-icon="home">Sign-in</a></li>
+								<li><a data-ajax="false href="#bronze" data-icon="info">Bronz App</a></li>
+								<li><a data-ajax="false href="#gitHub" data-icon="gear">Gitlinks</a></li>
+						    </ul>
+						</div>			
+					</div>
+		</header>
+
+
+		<div data-role="content">	
+			<p id="search">Search</p>
+			<ul data-role="listview" data-role="listview" data-filter="true" data-theme="b">
+				<li>
+					<a href="#networks" data-ajax="false">
+					<img src="images/networksIcon.jpeg"/>
+						<h3>Social & Business Networks</h3>
+						<p>Access all your favorites here</p>
+					</a>
+				</li>
+			</ul>
+			<ul data-role="listview" data-mini="true" data-theme="b">
+				<li
+					<a href="#games" data-ajax="false">
+					<img src="images/gameIcon.png"/>
+						<h3>Games</h3>
+						<p>Access Games</p>
+					</a>
+				</li>
+			</ul>
+			<ul data-role="listview" data-mini="true" data-theme="b">
+				<li
+					<a href="#work" data-ajax="false">
+					<img src="images/digitalMediaIcon.jpeg"/>
+						<h3>Digital Media</h3>
+						<p>Music and Videos</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div data-role="footer" data-theme="b">
+				
+				<p><a data-ajax="false" data-role="button" id="backToHomeButton" class="backToHomeButton" data-theme="e" href="#home">Take Me Home</a></p>
+		</div>
+	</div>
+
+
+
+
+<!--EDUCATION PAGE-->
+	
+	<div data-role="page" id="ed" data-add-back-btn="true">
+
+
+		<header data-role="header" data-position="fixed" data-theme="c">
+          		<div data-role="header" data-position="fixed" data-theme="c">
+					<h1>Education</h1>
+				</div>
+          		<div id="indexIcon"style="text-align:center;" >
+          	 		<a data-ajax="false"> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>
+				
+<!--Navbar-->	<div data-role="navbar">
+						<ul>
+							<li><a data-ajax="false href="#additem.html" id="additem.html" data-icon="home">Sign-in</a></li>
+							<li><a data-ajax="false href="#bronze" data-icon="info">Bronz App</a></li>
+							<li><a data-ajax="false href="#gitHub" data-icon="gear">GitLinks</a></li>
+						</ul>			
+		        		
+		        		<label for="search-mini" id="searchField">Search This Page:</label>
+					<input type="search" name="search-mini" id="search-mini" value="" data-mini="true" data-theme="c"/>
+				</div>
+		</header>
+
+
+
+		<div data-role="content">	
+			<p>Page content goes here.</p>		
+		</div>
+
+
+		<div data-role="footer" data-theme="c">
+			<p><a data-ajax="false" data-role="button" id="backToHomeButton" class="backToHomeButton" data-theme="e" href="#home">Take Me Home</a></p>
+		</div>
+	</div>
+
+
+
+
+<!--WORK PAGE-->
+	<div data-role="page" id="work" data-add-back-btn="true">
+
+
+		<header data-role="header" data-position="fixed" data-theme="d">
+          		<div data-role="header" data-position="fixed" data-theme="d" >
+					<h1>Work</h1>
+				</div>
+          		<div id="indexIcon"style="text-align:center;" >
+          	 		<a data-ajax="false"> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>
+				
+<!--Navbar-->	<div data-role="navbar">
+						<ul>
+							<li><a data-ajax="false href="#additem.html" id="additem.html" data-icon="home">Sign-in</a></li>
+							<li><a data-ajax="false href="#bronze" data-icon="info">Bronz App</a></li>
+							<li><a data-ajax="false href="#gitHub" data-icon="gear">GitHub</a></li>
+						</ul>			
+		        		
+		        		<label for="search-mini" id="searchField">Search This Page:</label>
+					<input type="search" name="search-mini" id="search-mini" value="" data-mini="true" data-theme="d"/>
+				</div>
+		</header>
+
+
+
+		<div data-role="content">	
+			<p>Page content goes here.</p>		
+		</div>
+
+
+		<div data-role="footer" data-theme="d">
+			<p><a data-ajax="false" data-role="button" id="backToHomeButton" class="backToHomeButton" data-theme="e" href="#home">Take Me Home</a></p>
+		</div>
+	</div>
+
+<!--NETWORKS PAGE-->
+<div data-role="page" id="networks" data-add-back-btn="true">
+
+
+		<header data-role="header" data-position="fixed" data-theme="c">
+          		<div data-role="header" data-position="fixed" data-theme="c">
+					<h1>Networks</h1>
+				</div>
+          		<!--<div id="indexIcon"style="text-align:center;" >
+          	 		<a data-ajax="false"> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>-->
+				
+<!--Navbar-->	<div data-role="navbar">
+						<ul>
+							<li><a data-ajax="false href="#additem.html" id="additem.html" data-icon="home">Sign-in</a></li>
+							<li><a data-ajax="false href="#bronze" data-icon="info">Bronz App</a></li>
+							<li><a data-ajax="false href="#gitHub" data-icon="gear">GitHub</a></li>
+						</ul>			
+		        		
+		        		<label for="search-mini" id="searchField">Search This Page:</label>
+					<input type="search" name="search-mini" id="search-mini" value="" data-mini="true" data-theme="c"/>
+				</div>
+		</header>
+	<div data-role="content">
+
+		<!--<div data-role="fieldcontain">	
+			<div class="ui-grid-a">
+					<div class="ui-block-a"
+						<ul data-role="listview">
+  							<li data-role="list-divider">Social Networks</li>
+  								<li><img src="images/facebook.png"/></li>
+  								<li><img src="images/googlePlus.png"/></li>
+  								<li><img src="images/tumblr.png"/></li>
+						</ul>
+					</div>	
+				<div class="ui-block-b"
+						<ul data-role="listview">
+  							<li data-role="list-divider">Communication Networks</li>
+  								<li><img src="images/yahoo.png"/></li>
+  								<li><img src="images/youtube.png"/></li>
+  								<li><img src="images/aim.png"/></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>-->
+		<div data-role="footer" data-theme="d">
+			<p><a data-ajax="false" data-role="button" id="backToHomeButton" class="backToHomeButton" data-theme="e" href="#home">Take Me Home</a></p>
+		</div>
+		
+<!--GitHubLInks-->
+<div data-role="page" id="gitHub">
+		
+	<header data-role="header" data-position="fixed" id="indexBackground">
+          		<div data-role="header" data-position="fixed" data-theme="a">
+					<h1>Wolflinx Home</h1>
+				</div>
+          		<div id="indexIcon" class="indexIcon" style="text-align:center">
+          	 		<a> 				
+          	 			<img id="logo"src="images/wolfhead.jpg">
+          	 		</a>
+          	 	</div>
+<!--CTA-->         		
+    			<div id="cta" style="background-color:#F6F3D2;border:5px solid orange;border-style: groove;text-align:center; height:130px;">
+			    	<p id="topCtaTitle" class="topCtaTitle">Welcome to Wolflinx</p>
+			    	<p id="openingStatement"data-rel="dialog">Organize and store everything you do on-line in one place.</p><br>
+					
+		    	</div>				
+<!--Navbar-->	<div data-role="navbar" >
+						<ul>
+							<li><a data-ajax="false" data-role="button" href="#additem.html" data-icon="home" id="additem.html" data-theme="a">Sign-in</a></li>
+							<li><a data-ajax="false" href="#" "data-icon="info" data-theme="a">BronzApp</a></li>
+							<li><a data-ajax="false" href="#gitHub" "data-icon="gear" data-theme="a">GitHub</a></li>
+						</ul>			
+		        </div>
+
+	</header>
+</div>
+<!-- JavaScript under here -->
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	</body>
+</html>
